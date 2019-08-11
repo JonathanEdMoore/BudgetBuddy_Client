@@ -136,7 +136,7 @@ export default class SignupPage extends React.Component {
       user_password: e.target['password'].value
     }
     AuthApiService.postUser(user)
-      .then(user => {
+      .then(() => {
         this.props.history.push(`/login`)
       })
       .catch(res => {

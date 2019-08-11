@@ -143,7 +143,7 @@ export default class EditAccountPage extends React.Component{
       user.user_password = e.target['password'].value
     }
     AuthApiService.updateUser(user)
-      .then(user => {
+      .then(() => {
         this.props.history.push(`/home`)
       })
       .catch(res => {
