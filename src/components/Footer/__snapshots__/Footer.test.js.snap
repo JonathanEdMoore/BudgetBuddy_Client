@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer snapshot test renders the UI as expected 1`] = `
+<div>
+  <footer
+    role="content-info"
+  >
+    <Link
+      to="/about"
+    >
+      About
+    </Link>
+    <span
+      className="Hyph"
+    >
+       - 
+    </span>
+    <div>
+      <SignupButton />
+      <span
+        className="Hyph"
+      >
+         - 
+      </span>
+      <LoginButton />
+    </div>
+  </footer>
+</div>
+`;

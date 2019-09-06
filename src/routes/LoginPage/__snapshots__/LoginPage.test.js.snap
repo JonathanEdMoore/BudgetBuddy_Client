@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage snapshot test renders the UI as expected 1`] = `
+<div>
+  <main
+    role="main"
+  >
+    <header>
+      <MainHeader />
+      <h2>
+        Log In
+      </h2>
+    </header>
+    <section>
+      <LoginForm
+        onLoginSuccess={[Function]}
+      />
+    </section>
+  </main>
+</div>
+`;

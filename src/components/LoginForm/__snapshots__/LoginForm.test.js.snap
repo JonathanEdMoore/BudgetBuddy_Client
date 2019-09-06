@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm snapshot test renders the UI as expected 1`] = `
+<div>
+  <BudgetBuddyForm
+    onSubmit={[Function]}
+  >
+    <div>
+      <label
+        htmlFor="email"
+      >
+        Email
+      </label>
+      <input
+        id="email"
+        name="email"
+        placeholder="Username"
+        type="text"
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="user_password"
+      >
+        Password
+      </label>
+      <input
+        id="user_password"
+        name="user_password"
+        placeholder="password"
+        type="password"
+      />
+      <p
+        className="submission-error"
+      />
+    </div>
+    <button
+      type="submit"
+    >
+      Log In
+    </button>
+  </BudgetBuddyForm>
+</div>
+`;

@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignupPage snapshot test renders the UI as expected 1`] = `
+<div>
+  <main
+    role="main"
+  >
+    <header>
+      <MainHeader />
+      <h2>
+        Sign Up
+      </h2>
+    </header>
+    <section>
+      <BudgetBuddyForm
+        onSubmit={[Function]}
+      >
+        <div
+          className="field"
+        >
+          <label
+            htmlFor="first-name"
+          >
+            First name
+            <p
+              className="error"
+            />
+          </label>
+          <input
+            id="first-name"
+            name="first-name"
+            onChange={[Function]}
+            placeholder="First Name"
+            type="text"
+          />
+          <ValidationError
+            hasError={true}
+            message=""
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <label
+            htmlFor="last-name"
+          >
+            Last name
+            <p
+              className="error"
+            />
+          </label>
+          <input
+            id="last-name"
+            name="last-name"
+            onChange={[Function]}
+            placeholder="Last Name"
+            type="text"
+          />
+          <ValidationError
+            hasError={true}
+            message=""
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <label
+            htmlFor="username"
+          >
+            Email
+            <p
+              className="error"
+            />
+          </label>
+          <input
+            id="email"
+            name="email"
+            onChange={[Function]}
+            type="text"
+          />
+          <ValidationError
+            hasError={true}
+            message=""
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <label
+            htmlFor="password"
+          >
+            Password
+            <p
+              className="error"
+            />
+          </label>
+          <input
+            id="password"
+            name="password"
+            onChange={[Function]}
+            type="password"
+          />
+          <p
+            className="submission-error"
+          />
+          <ValidationError
+            hasError={true}
+            message=""
+          />
+        </div>
+        <button
+          disabled={true}
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </BudgetBuddyForm>
+      <p>
+        Already have an account?
+        <Link
+          to="/login"
+        >
+          <button>
+            Log in
+          </button>
+        </Link>
+      </p>
+    </section>
+  </main>
+</div>
+`;

@@ -45,7 +45,7 @@ const AuthApiService = {
       if (!res.ok) {
         return res.json().then(e => Promise.reject(e))
       }
-      return res.json()
+      return res
     })
   },
 

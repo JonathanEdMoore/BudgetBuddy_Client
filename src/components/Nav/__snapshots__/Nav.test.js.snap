@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav snapshot test renders the UI as expected 1`] = `
+<div>
+  <div>
+    <nav
+      role="navigation"
+    >
+      <Link
+        to="/signup"
+      >
+        <button>
+          Sign Up
+        </button>
+      </Link>
+      <Link
+        to="/login"
+      >
+        <button>
+          Log In
+        </button>
+      </Link>
+    </nav>
+  </div>
+</div>
+`;

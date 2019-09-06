@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainHeader snapshot test renders the UI as expected 1`] = `
+<div>
+  <header
+    role="banner"
+  >
+    <Link
+      to="/"
+    >
+      <h1>
+        BudgetBuddy
+      </h1>
+    </Link>
+    <div>
+      <SignupButton />
+      <span
+        className="Hyph"
+      >
+         - 
+      </span>
+      <LoginButton />
+    </div>
+    <Link
+      to="/home"
+    >
+      Home
+    </Link>
+  </header>
+</div>
+`;

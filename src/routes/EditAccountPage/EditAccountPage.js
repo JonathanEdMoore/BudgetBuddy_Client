@@ -1,5 +1,4 @@
 import React from 'react'
-import ValidationError from '../../ValidationError/ValidationError'
 import BudgetBuddyForm from '../../components/BudgetBuddyForm/BudgetBuddyForm'
 import AuthApiService from '../../services/auth-api-service'
 import MainHeader from '../../components/MainHeader/MainHeader'
@@ -136,17 +135,12 @@ export default class EditAccountPage extends React.Component{
     if(e.target['last-name'].value !== ''){
       user.last_name = e.target['last-name'].value
     }
-    if(e.target['email'].value !== ''){
-      user.email = e.target['email'].value
-    }
-    if(e.target['password'].value !== ''){
-      user.user_password = e.target['password'].value
-    }
     AuthApiService.updateUser(user)
       .then(() => {
         this.props.history.push(`/home`)
       })
       .catch(res => {
+        console.log(res)
         this.setState({
           error: res.error
         })
@@ -154,7 +148,7 @@ export default class EditAccountPage extends React.Component{
   }
 
   render(){
-    const { first_name_valid, last_name_valid, email_valid, user_password_valid, validationMessages } = this.state
+    const { first_name_valid, last_name_valid, validationMessages } = this.state
     return(
       <div>
         <main role="main">
@@ -176,7 +170,7 @@ export default class EditAccountPage extends React.Component{
                     <p className="error">{validationMessages.last_name}</p>)}</label>
                 <input type="text" name='last-name' id='last-name' placeholder='Last Name' onChange={e => this.setLastName(e.target.value)} />
               </div>
-              <div className='field'>
+              {/* <div className='field'>
                 <label htmlFor="username">Change Email
               {!email_valid && (
                     <p className="error">{validationMessages.email}</p>)}</label>
@@ -190,7 +184,7 @@ export default class EditAccountPage extends React.Component{
                 <input type="password" name='password' id='password' placeholder='*******' onChange={e => this.setPassword(e.target.value)} />
                 <p className="submission-error">{this.state.error}</p>
                 <ValidationError hasError={!this.state.user_password_valid} message={this.state.validationMessages.user_password} />
-              </div>
+              </div> */}
               <button type='submit' disabled={!this.state.form_valid}>Update</button>
               <Link to='/delete_account'><button>Delete Account</button></Link>
             </BudgetBuddyForm>

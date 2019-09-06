@@ -155,7 +155,7 @@ export default class UserPage extends React.Component {
             <select onChange={this.handleCategoryFilter} name="category">
               <option value="">Select Category </option>
               {this.state.categories.map(category => {
-                return <option value={category.category}>{category.category}</option>
+                return <option key={category.id} value={category.category}>{category.category}</option>
               })}
             </select>
           </div>

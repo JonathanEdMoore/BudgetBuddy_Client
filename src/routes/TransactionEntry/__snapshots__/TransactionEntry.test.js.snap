@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TransactionEntry snapshot test renders the UI as expected 1`] = `
+<div>
+  <main
+    role="main"
+  >
+    <header>
+      <MainHeader />
+      <h2>
+        Transaction
+      </h2>
+    </header>
+    <section>
+      <BudgetBuddyForm
+        className="signup-form"
+        onSubmit={[Function]}
+      >
+        <div>
+          <label
+            htmlFor="transaction-type"
+          >
+            Deposit or Withdrawal?
+          </label>
+          <select
+            name="type"
+          >
+            <option
+              value="Deposit"
+            >
+              Deposit
+            </option>
+            <option
+              value="Withdrawal"
+            >
+              Withdrawal
+            </option>
+          </select>
+        </div>
+        <div>
+          <label
+            htmlFor="title"
+          >
+            Title
+          </label>
+          <input
+            id="title"
+            name="title"
+            placeholder="Name For transaction"
+            type="text"
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="amount"
+          >
+            Amount
+          </label>
+          <input
+            it="amount"
+            name="amount"
+            placeholder="10.00"
+            tyep="number"
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="category"
+          >
+            Category
+          </label>
+          <select
+            name="category"
+          />
+        </div>
+        <button
+          type="submit"
+        >
+          Submit
+        </button>
+      </BudgetBuddyForm>
+    </section>
+  </main>
+</div>
+`;
