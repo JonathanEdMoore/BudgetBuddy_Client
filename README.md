@@ -52,6 +52,10 @@ This table of the databse is where the bulk of the information resides. The tran
 
 The users table stores all information relating to the user. This inclues first and last names, email, and passwords. The password is hashed prior to being inserted into the database.
 
+## Summary
+
+BudgetBuddy is a virtual check registry application. The purpose of the application is to be an easy to use app that will allow the user to keep track of their daily transactions. 
+
 ## Technology Used
 
 HTML5
