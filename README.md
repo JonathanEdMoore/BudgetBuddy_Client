@@ -1,3 +1,72 @@
+# BudgetBuddy
+
+##
+Creator:
+ Jonathan Moore
+
+## Link to app
+
+https://capstone1budgetbuddyclient.jmjonemoore.now.sh/
+
+## Demo
+
+To see apps functionality just log in with demo credentials.
+email: demo@email.com
+Password: Asdf123!
+
+## Landing
+
+![landing](/src/Images/Landing.png "Landing Page")
+
+Landing Page has information about the project as well as links to the sign-up and login pages.
+
+## Sign-Up
+
+![signup](/src/Images/Signup.png "Sign-up Page")
+
+The Sign-Up Page allows the user to register an account for the site.
+
+## Login
+
+![login](/src/Images/Login.png "Login page")
+
+The Login Page allows the user to login to their account
+
+## Home Page
+
+![Home](/src/Images/Homepage.png "Home page")
+
+This displays to transactions the user has made.
+
+## Database Related Documentation and Routes
+
+### Category:
+
+In the database, I have a list of categories for transactions. This will be useful if the user is interested in identifying transactions by category type.
+
+### Transactions:
+
+This table of the databse is where the bulk of the information resides. The transactions table stores all information related to transactions any user might want to store. It uses a foreign key to link the transaction to a specific user.
+
+### Users:
+
+The users table stores all information relating to the user. This inclues first and last names, email, and passwords. The password is hashed prior to being inserted into the database.
+
+## Technology Used
+
+HTML5
+CSS3
+ReactJS
+NodeJS
+Express
+Enzyme
+Mocha
+PostgreSQL
+
+________________________________________________________________________________________________________________________________________________________
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
