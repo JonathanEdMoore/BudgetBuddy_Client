@@ -6,7 +6,7 @@ Creator:
 
 ## Link to app
 
-https://capstone1budgetbuddyclient.jmjonemoore.now.sh/
+https://budgetbuddy-app.now.sh/
 
 ## Demo
 
