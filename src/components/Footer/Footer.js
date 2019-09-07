@@ -8,7 +8,7 @@ import './Footer.css'
 export default class Footer extends React.Component{
   handleLogoutClick = () => {
     TokenService.clearAuthToken()
-    document.location.assign('https://capstone1budgetbuddyclient.jmjonemoore.now.sh/')
+    document.location.assign('https://budgetbuddy-app.now.sh/')
     // document.location.assign('http://localhost:3000/')
   }
   renderLoginLink() {

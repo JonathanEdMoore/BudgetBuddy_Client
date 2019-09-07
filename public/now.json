@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "alias": "budgetbuddy-app",
+  "alias": "budgetbuddy",
   "name": "capstone_1_budgetbuddy_client",
   "routes": [
     {
